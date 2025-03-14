@@ -40,6 +40,13 @@ return require('packer').startup(function(use)
 		end
 	}
 
+
+use {
+  'goolord/alpha-nvim',
+  requires = { 'nvim-tree/nvim-web-devicons' }
+}
+
+
     use { 'lukas-reineke/indent-blankline.nvim', config = function()
         require("ibl").setup()
     end }

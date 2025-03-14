@@ -3,18 +3,18 @@ local builtin = require('telescope.builtin')
 -- Поиск файлов, включая скрытые
 vim.keymap.set('n', '<leader>ff', function()
   builtin.find_files({ hidden = true })
-end, {})
+end, { desc = "Find Files (including hidden)" })
 
--- Поиск файлов в git-репозитории, включая скрытые
+-- Поиск файлов в git-репозитории
 vim.keymap.set('n', '<C-p>', function()
-  builtin.git_files({ hidden = true })
-end, {})
+  builtin.git_files()
+end, { desc = "Find Git-tracked Files" })
 
--- Поиск с использованием grep, включая скрытые
-vim.keymap.set('n', '<leader>fw<CR>', function()
-  builtin.grep_string({ 
+-- Поиск текста через grep, включая скрытые файлы
+vim.keymap.set('n', '<leader>fw', function()
+  builtin.grep_string({
     search = vim.fn.input("Grep > "),
     hidden = true
   })
-end)
+end, { desc = "Live Grep with input" })
 
