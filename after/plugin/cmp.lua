@@ -48,13 +48,13 @@ cmp.setup({
 		['<C-e>'] = cmp.mapping.close(),
 	},
 	sources = cmp.config.sources({
-		{ name = 'nvim_lsp', max_item_count = 7 },  -- LSP source
-		{ name = 'luasnip', max_item_count = 7 },   -- Snippet source
+		{ name = 'nvim_lsp', max_item_count = 10 },  -- LSP source
+		{ name = 'luasnip', max_item_count = 10 },   -- Snippet source
 	}, {
-		{ name = 'buffer', max_item_count = 7 },    -- Buffer source
-		{ name = 'path', max_item_count = 7 },      -- Path source
-		{ name = 'emoji', max_item_count = 5 },     -- Emoji source (optional)
-		{ name = 'tags', max_item_count = 5 },      -- Tags source (optional for HTML attributes)
+		{ name = 'buffer', max_item_count = 10 },    -- Buffer source
+		{ name = 'path', max_item_count = 10 },      -- Path source
+		{ name = 'emoji', max_item_count = 10 },     -- Emoji source (optional)
+		{ name = 'tags', max_item_count = 10 },      -- Tags source (optional for HTML attributes)
 	}),
 	formatting = {
 		format = lspkind.cmp_format({

@@ -156,11 +156,6 @@ _G.packer_plugins = {
     path = "C:\\Users\\Muhammadjon\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\mason.nvim",
     url = "https://github.com/williamboman/mason.nvim"
   },
-  ["nvim-autopairs"] = {
-    loaded = true,
-    path = "C:\\Users\\Muhammadjon\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-autopairs",
-    url = "https://github.com/windwp/nvim-autopairs"
-  },
   ["nvim-cmp"] = {
     loaded = true,
     path = "C:\\Users\\Muhammadjon\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-cmp",
@@ -212,12 +207,6 @@ _G.packer_plugins = {
     path = "C:\\Users\\Muhammadjon\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\telescope.nvim",
     url = "https://github.com/nvim-telescope/telescope.nvim"
   },
-  ["toggleterm.nvim"] = {
-    config = { "\27LJ\2\n \1\0\0\4\0\a\0\v6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0006\3\4\0009\3\5\0039\3\6\3=\3\6\2B\0\2\1K\0\1\0\nshell\6o\bvim\1\0\b\20shade_terminals\2\20start_in_insert\2\18close_on_exit\2\14direction\15horizontal\17persist_size\2\tsize\3\20\16auto_scroll\2\nshell\0\nsetup\15toggleterm\frequire\0" },
-    loaded = true,
-    path = "C:\\Users\\Muhammadjon\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\toggleterm.nvim",
-    url = "https://github.com/akinsho/toggleterm.nvim"
-  },
   ["tokyonight.nvim"] = {
     loaded = true,
     path = "C:\\Users\\Muhammadjon\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\tokyonight.nvim",
@@ -227,11 +216,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "C:\\Users\\Muhammadjon\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\undotree",
     url = "https://github.com/mbbill/undotree"
-  },
-  ["vim-dispatch"] = {
-    loaded = true,
-    path = "C:\\Users\\Muhammadjon\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\vim-dispatch",
-    url = "https://github.com/tpope/vim-dispatch"
   }
 }
 
@@ -244,10 +228,6 @@ time([[Config for indent-blankline.nvim]], false)
 time([[Config for rose-pine]], true)
 try_loadstring("\27LJ\2\n9\0\0\3\0\3\0\0056\0\0\0009\0\1\0'\2\2\0B\0\2\1K\0\1\0\26colorscheme rose-pine\bcmd\bvim\0", "config", "rose-pine")
 time([[Config for rose-pine]], false)
--- Config for: toggleterm.nvim
-time([[Config for toggleterm.nvim]], true)
-try_loadstring("\27LJ\2\n \1\0\0\4\0\a\0\v6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0006\3\4\0009\3\5\0039\3\6\3=\3\6\2B\0\2\1K\0\1\0\nshell\6o\bvim\1\0\b\20shade_terminals\2\20start_in_insert\2\18close_on_exit\2\14direction\15horizontal\17persist_size\2\tsize\3\20\16auto_scroll\2\nshell\0\nsetup\15toggleterm\frequire\0", "config", "toggleterm.nvim")
-time([[Config for toggleterm.nvim]], false)
 -- Config for: Comment.nvim
 time([[Config for Comment.nvim]], true)
 try_loadstring("\27LJ\2\n5\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\fComment\frequire\0", "config", "Comment.nvim")

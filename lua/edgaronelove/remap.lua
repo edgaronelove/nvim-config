@@ -27,9 +27,9 @@ vim.keymap.set("n", "<leader>ls", ":LiveServerStop<CR>")
 
 
 
-
 -- Настройка bufferline
 require('bufferline').setup{}
 
 -- Настройка сочетания клавиш
 vim.api.nvim_set_keymap('n', '<Space>/', ':bdelete<CR>', { noremap = true, silent = true })
+ 

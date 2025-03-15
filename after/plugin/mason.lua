@@ -1,6 +1,6 @@
 require("mason").setup()
 require("mason-lspconfig").setup({
-	ensure_installed = { "cssls", "pyright"},
+	ensure_installed = { "cssls", "pyright" },
 })
 
 local lspconfig = require('lspconfig')
@@ -10,14 +10,14 @@ lspconfig.cssls.setup {
 	capabilities = capabilities,
 }
 
-require'lspconfig'.pyright.setup{
+lspconfig.pyright.setup{
+	capabilities = capabilities,
 	settings = {
 		python = {
-			formatting = {
-				provider = "black",
-				analysis = {
-					completeFunctionParens = true,  -- Включает автозаполнение скобок для функций
-				},
+			analysis = {
+				autoSearchPaths = true,
+				useLibraryCodeForTypes = true,
+				diagnosticMode = "workspace",
 			},
 		},
 	},

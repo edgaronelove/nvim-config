@@ -56,4 +56,3 @@ require('bufferline').setup({
         },
     },
 })
-
